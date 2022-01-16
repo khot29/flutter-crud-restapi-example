@@ -9,7 +9,17 @@ class Cases {
   final String status;
   final String updated;
 
-  Cases({ this.id, this.name, this.gender, this.age, this.address, this.city, this.country, this.status, this.updated });
+  Cases({
+         required this.id,
+         required this.name,
+         required this.gender,
+         required this.age,
+         required this.address,
+         required this.city,
+         required this.country,
+         required this.status,
+         required this.updated,
+       });
 
   factory Cases.fromJson(Map<String, dynamic> json) {
     return Cases(
